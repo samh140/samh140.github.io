@@ -12,9 +12,14 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: linear-gradient(180deg, #ffffff 0%, #87ceeb 100%);
+        }
+        h1,
+        h2 {
+            font-weight: bold;
         }
         header {
-            background: #333;
+            background: #00bfff;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -37,6 +42,45 @@
             background: #333;
             color: #fff;
         }
+        /* Styling for project boxes */
+        .project-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .project-box {
+            border: 2px solid #333;
+            padding: 1.5rem;
+            border-radius: 8px;
+            flex: 1 1 calc(50% - 1rem);
+            min-width: 280px;
+            max-width: 48%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project-box h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .project-box p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .project-url {
+            background: #f0f0f0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .project-url a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .project-url a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -45,8 +89,8 @@
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <a href="#about">About Me</a>
+            <a href="#extracurriculars">Extracurriculars</a>
             <a href="#projects">Projects</a>
-            <a href="#credentials">Credentials</a>
             <a href="#contact">Contact Info</a>
         </nav>
     </header>
@@ -62,33 +106,56 @@
         </p>
     </section>
 
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars">
+        <h2>Extracurriculars</h2>
+        <p>
+            <!-- Brief introduction to your extracurricular activities -->
+        </p>
+        <ul>
+            <!-- Add your extracurricular activities here. Examples: -->
+            <li>Full Plate Project, cofounder and vice president. 2025-Present</li>
+            <li>Community Service Club, club member. 2023-Present</li>
+            
+        </ul>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <p>
-            <!-- Add a list or description of your projects here -->
+            <!-- Brief introduction to your projects -->
             Here are some projects that I have worked on:
         </p>
-        <ul>
-            <li>Project 1: This program creates a dog object that the user can interact with. It shows my capabilities of using constructors and methods. This was produced using Visual Studios. <a href="[link to project repository]" target="_blank">https://github.com/samh140/DOG_ARO</a></li>
-            <li>Project 2: This project is an online designed train based on the hit indie game "Omori". This was produced using OnShape. <a href="[link to project repository]" target="_blank">https://student.xello.world/public/portfolio/95a8df3923e04c22bc2b9ca09dfc7097</a></li>
-        </ul>
-    </section>
+        <div class="project-container">
+            <!-- Project Box 1 -->
+            <div class="project-box">
+                <h3>Dog Simulation Project</h3>
+                <p>
+                    <!-- INSERT PROJECT 1 DESCRIPTION HERE. Include details about what the project does, 
+                    the technologies used, and what skills it demonstrates -->
+                    Create a dog with default or custom attributes. Iteract with the dog through actions from user input. Each action changes the dog's stats. Each dog also has a favorite toy with durability. Coded in java.
+                </p>
+                <div class="project-url">
+                    <strong>Link to Project:</strong><br>
+                    <a href="https://github.com/samh140/DOG_ARO" target="_blank">samh140/DOG_ARO</a>
+                </div>
+            </div>
 
-    <!-- Credentials Section -->
-    <section id="credentials">
-        <h2>Credentials</h2>
-        <p>
-            <!-- Add your credentials, certifications, or achievements here -->
-            I have earned the following certifications and achievements:
-        </p>
-        <ul>
-            <li>Certification 1: I have over 40 hours of volunteer service.</li>
-            <li>Certification 2: Have organized volunteering events as cofounder/vice president of the Full Plate Project</li>
-
-            <img src="Screenshot 2026-02-06 103746.png" alt="Description of the image">
-            <!-- Add images of your certification digital badges -->
-        </ul>
+            <!-- Project Box 2 -->
+            <div class="project-box">
+                <h3>Budget Plan Calendar</h3>
+                <p>
+                    Creates a reliable and efficient, two week calendar, that allows uesr to input their budget plan and spending for each day. The program compares the user's spending with their budget plan, then gives the user detailed and layered feedback. Coded in java.
+                    <!-- INSERT PROJECT 2 DESCRIPTION HERE. Include details about what the project does, 
+                    the technologies used, and what skills it demonstrates -->
+                </p>
+                <div class="project-url">
+                    <strong>Link to Project:</strong><br>
+                    <a href="https://github.com/phAPCSAperiod2/final-project-samh140" target="_blank">samh140_calendar</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Info Section -->
@@ -99,8 +166,7 @@
             Reach me through:
         </p>
         <ul>
-            <li>Email: [your-email@example.com]</li>
-            <li>LinkedIn: <a href="[your-linkedin-profile]" target="_blank">[Your LinkedIn]</a></li>
+            <li>Email: samh140@gmail.com</li>
         </ul>
     </section>
 
